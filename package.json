@@ -1,0 +1,54 @@
+{
+  "name": "cbt-kedokteran-gigi",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "npm run build:client && node scripts/build-hosting.mjs && node scripts/audit-build.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "typecheck": "tsc -b",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "content:inventory": "node --experimental-strip-types scripts/content.ts inventory",
+    "content:extract": "node --experimental-strip-types scripts/content.ts extract",
+    "content:validate": "node --experimental-strip-types scripts/content.ts validate",
+    "content:check": "node --experimental-strip-types scripts/content.ts check",
+    "content:integrate": "node --experimental-strip-types scripts/content.ts integrate",
+    "content:merge": "node --experimental-strip-types scripts/merge-sources.ts",
+    "content:prepare-review": "node --experimental-strip-types scripts/prepare-review.ts",
+    "build:hosting": "npm run build",
+    "build:client": "npm run content:check && tsc -b && vite build && node scripts/audit-build.mjs",
+    "build:pages": "npm run content:check && tsc -b && vite build --mode pages --base /ocus/ --outDir dist-pages && node scripts/build-pages.mjs && node scripts/audit-build.mjs dist-pages"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "lucide-react": "^1.74.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.15.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.14.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.73.0",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0",
+    "wrangler": "^4.164.0"
+  }
+}

@@ -8,7 +8,7 @@
         {
           "id": "gsm-gabungan-akt22",
           "title": "GSM",
-          "contentVersion": "1f4a40228d3accd47ef41ac5444e7f6e83bf79ab7e398fc9dd4fef4a5cbdbb11",
+          "contentVersion": "5eef6959c78ac0d9fb73da4da5a4a64c6c610e93198f8f2e0f7b22f2f4b73fad",
           "questions": [
             {
               "id": "kandidat-6913e01368283285164d3f41",
@@ -11102,13 +11102,125 @@
                 "originalNumber": "40",
                 "originalKey": "A; penanda/catatan sumber, jejak pemeriksaan G-211 disimpan lokal"
               }
+            },
+            {
+              "id": "gsm-bf01533d108de9674c6debc2",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Apakah yang merupakan nilai-nilai dari Pusat inkubator Bisnis Universitas Trisakti?"
+                }
+              ],
+              "options": [
+                {
+                  "id": "gsm-bf01533d108de9674c6debc2-1",
+                  "text": "Empowering, Bridging"
+                },
+                {
+                  "id": "gsm-bf01533d108de9674c6debc2-2",
+                  "text": "Enriching, Independent"
+                },
+                {
+                  "id": "gsm-bf01533d108de9674c6debc2-3",
+                  "text": "Bridging, Empowering, Enriching"
+                },
+                {
+                  "id": "gsm-bf01533d108de9674c6debc2-4",
+                  "text": "Independent, mutualism, enriching"
+                },
+                {
+                  "id": "gsm-bf01533d108de9674c6debc2-5",
+                  "text": "Independent, empowering, bridging"
+                }
+              ],
+              "correctOptionId": "gsm-bf01533d108de9674c6debc2-3",
+              "explanation": [
+                {
+                  "type": "paragraph",
+                  "text": "Bridging menjembatani hubungan dan peluang kerja sama. Empowering memperkuat kemampuan agar seseorang lebih mandiri, sedangkan enriching memperkaya pengetahuan dan pengalaman. Ketiganya menggambarkan pengembangan kapasitas kewirausahaan."
+                }
+              ],
+              "references": [
+                {
+                  "id": "ref-1",
+                  "citation": "UAM GSM 6517 PASLUL.pdf, halaman PDF14, no24: C ditandai. Pengguna mempertahankan kunci ini dalam tinjauan lanjutan; atribusi nilai ke unit spesifik tetap ambiguous."
+                },
+                {
+                  "id": "ref-2",
+                  "citation": "Universitas Trisakti, Laboratorium Pengembangan Organisasi dan Bisnis (POBIS), 22November2021: empowering-bridging-enriching. Unit POBIS bukan konfirmasi identitas Pusat Inkubator Bisnis pada soal.",
+                  "url": "https://industri.fti.trisakti.ac.id/news/laboratorium-pengembangan-organisasi-dan-bisnis-pobis/"
+                }
+              ],
+              "verification": "ambiguous",
+              "source": {
+                "file": "soal/UAM GSM 6517 PASLUL.pdf",
+                "location": "UAM 6517 - soal utama; halaman PDF 14",
+                "originalNumber": "24",
+                "originalKey": "C; penanda/catatan sumber, jejak pemeriksaan G-181 disimpan lokal"
+              }
+            },
+            {
+              "id": "gsm-b4650bd8aa3ce54507a17792",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "text": "Sebuah RSGM sedang dalam survei akreditasi menggunakan SNARS Edisi 1. Salah satu elemen penilaian yg harus dipenuhi adalah pembuatan flyer, brosur, poster ttg permasalahan kesehatan gigi dan mulut, bagaimana perawatan serta tips pencegahannya. Berdasarkan kasus tersebut, manakah standar pelayanan yang dipenuhi RSGM tersebut?"
+                }
+              ],
+              "options": [
+                {
+                  "id": "gsm-b4650bd8aa3ce54507a17792-1",
+                  "text": "Asesmen pasien"
+                },
+                {
+                  "id": "gsm-b4650bd8aa3ce54507a17792-2",
+                  "text": "Hak pasien dan keluarga"
+                },
+                {
+                  "id": "gsm-b4650bd8aa3ce54507a17792-3",
+                  "text": "Sasaran keselamatan pasien"
+                },
+                {
+                  "id": "gsm-b4650bd8aa3ce54507a17792-4",
+                  "text": "Pelayanan dan asuhan pasien"
+                },
+                {
+                  "id": "gsm-b4650bd8aa3ce54507a17792-5",
+                  "text": "Manajemen Komunikasi dan Edukasi"
+                }
+              ],
+              "correctOptionId": "gsm-b4650bd8aa3ce54507a17792-5",
+              "explanation": [
+                {
+                  "type": "paragraph",
+                  "text": "Dalam SNARS Edisi 1, Manajemen Komunikasi dan Edukasi (MKE) mencakup komunikasi serta edukasi pasien dan keluarga. Brosur, poster, dan leaflet membantu menjelaskan masalah kesehatan, perawatan, dan pencegahan dengan bahasa yang mudah dipahami."
+                }
+              ],
+              "references": [
+                {
+                  "id": "ref-1",
+                  "citation": "UAM GSM 6517 PASLUL.pdf, halaman PDF25, no45: E Manajemen Komunikasi dan Edukasi; padanan scan UAMm GSM 6517 PASLUL.pdf halaman25."
+                },
+                {
+                  "id": "ref-2",
+                  "citation": "KARS, dr. Sutoto, SNARS Ed1 dan KARS Internasional, halaman PDF12 dan14: Manajemen Komunikasi dan Edukasi (MKE). Koreksi nama bab dan satu wakil disetujui pengguna pada tinjauan G185.",
+                  "url": "https://persi.or.id/wp-content/uploads/2018/08/p9-snars-akred-internasional.pdf"
+                }
+              ],
+              "verification": "verified",
+              "source": {
+                "file": "soal/UAM GSM 6517 PASLUL.pdf",
+                "location": "UAM 6517 - soal utama; halaman PDF 25",
+                "originalNumber": "45",
+                "originalKey": "E; penanda/catatan sumber, jejak pemeriksaan G-185 disimpan lokal"
+              }
             }
           ],
           "approval": {
             "status": "approved",
             "approvedBy": "Pemilik proyek melalui percakapan",
-            "approvedAt": "2026-11-19T03:19:42.717Z",
-            "decisionReference": "Pengguna memutuskan G001-G101 per kode (52ikuti sumber/49skip), mengizinkan pemulihan catatan yang jawabannya dapat diverifikasi beserta pengecoh, meminta seluruh duplikat disatukan, dan memerintahkan melanjutkan publikasi. G185/soal SNARS1 KE-MKE serta pasangan G041/G042 ditahan sambil menunggu keputusan konsolidasi/koreksi. Sumber mentah dan laporan tetap lokal.",
+            "approvedAt": "2026-11-19T04:48:42.609Z",
+            "decisionReference": "Keputusan pengguna G001-G101 dan izin pemulihan catatan terverifikasi tetap berlaku. Tinjauan lanjutan PDF SHA256 380a4fbfded168e1130cda5463ca52eee00232428c9cba313f92866c2014a8eb: G041/G042/G118/G174/G177/G179/G187/G203/G208 skip; G181 pertahankan kunci C; G185 satu soal dengan E MKE sesuai usulan PDF, menggantikan varian KE. Instruksi publikasi online tetap berlaku. Bahan mentah, laporan dan secret tetap lokal.",
             "sourceKeyDecisions": [
               {
                 "questionId": "kandidat-6913e01368283285164d3f41",
@@ -11349,6 +11461,10 @@
               {
                 "questionId": "gsm-8144d408cb019c3ef32ff199",
                 "decisionReference": "G-101: pengguna \"biarkan demikian, ikut kunci sumber\" pada PDF tinjauan SHA256 6738543d2439f8a446c54825ce38f626a654025ed6eccf25dcdaae9109b6bb86. Tidak mengklaim verifikasi ilmiah; publikasi dalam lingkup instruksi lanjutan pengguna."
+              },
+              {
+                "questionId": "gsm-bf01533d108de9674c6debc2",
+                "decisionReference": "G181: pengguna \"biarkan demikian, ikuti kunci\" pada PDF SHA256 380a4fbfded168e1130cda5463ca52eee00232428c9cba313f92866c2014a8eb. Kunci C dipertahankan; status ilmiah tetap ambiguous."
               }
             ]
           }

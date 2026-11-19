@@ -16,7 +16,7 @@ Bahasa komunikasi dan dokumentasi utama Indonesia. Arahan terbaru: chrome UI ber
 - `modul/<judul folder>/...` adalah sumber utama lokal read-only. Judul UI harus persis nama subfolder langsung. Jangan mengubah, menghapus, atau memindahkan bahan.
 - `content/private/` dan `reports/` hanya lokal, diabaikan Git dan tidak dilayani Vite. Jangan menyalinnya ke `public/` atau bundle.
 - Data publik hanya `src/content/catalog.json` dan aset yang secara eksplisit diizinkan di `public/assets/content/`.
-- Katalog publik saat ini berisi GSM 47 soal. Katalog kosong tetap harus ditangani aman untuk instalasi baru. Fixture nonmedis hanya `/dev` saat Vite development; tidak boleh masuk produksi.
+- Katalog publik terbaru berisi GSM209soal; bagian47/189/207di bawah adalah riwayat kurasi. Katalog kosong tetap harus ditangani aman untuk instalasi baru. Fixture nonmedis hanya `/dev` saat Vite development; tidak boleh masuk produksi.
 - Jangan mengarang soal medis, kunci, penjelasan, sitasi, hasil pengujian, atau persetujuan.
 - Konflik kunci, soal ambigu, batas paket tak jelas, dan izin distribusi harus ditanyakan kepada pengguna. Lanjutkan bagian lain yang aman.
 - Saat membahas persoalan sumber, selalu sebut nama berkas persis, halaman PDF, bagian/nomor soal, serta opsi terkait agar pengguna mudah memeriksanya. Klarifikasi terbaru: pengguna menyatakan sorotan kuning seharusnya merupakan penanda jawaban, sebagaimana pada banyak soal lain. Catat sebagai kunci dari sumber, dengan verifikasi isi terpisah; jangan menyamakannya otomatis dengan kunci resmi dosen. Tanyakan lanjutan hanya jika ada konflik konkret dengan bukti yang jelas.
@@ -79,3 +79,10 @@ Detail pipeline, format draft/approval, dan keterbatasan ekstraksi: `docs/CONTEN
 - G038 mengikuti D dari padanan G120 (IKGMP halaman6 no18, tulisan biru), bukan verified. G038 halaman19 tidak memiliki penanda tunggal; provenance ini wajib tetap terbaca privat. G002 menjadi wakil lengkap kaca mulut, menggantikan varian pendek Q014/R12 tanpa mengganti konsep kunci.
 - G185 dan wakil lama GITAR48 ditahan karena SNARS1 memakai MKE, bukan KE. Perubahan nama jawaban memerlukan keputusan pengguna. G041/G042 ditahan karena skenario dan sasaran serupa tetapi dimensi/kunci berbeda; jangan menerbitkan dua soal berulang atau memilih salah satu tanpa keputusan konsolidasi.
 - Tinjauan lanjutan10 kasus ada pada output/pdf/GSM-keputusan-lanjutan.pdf, kode tetap G. Sisa fragmen tidak dipaksakan; G122/G186/G200 belum dipulihkan hanya dengan membuat pengecoh. Ledger hasil lengkap dan44 pengecoh buatan tersimpan privat pada g-application-ledger.json.
+
+## Keputusan lanjutan pengguna — rilis209
+
+- Seluruh10kasus PDF lanjutan telah diputuskan: G041/G042/G118/G174/G177/G179/G187/G203/G208 skip; G181 mengikuti C; G185 satu wakil dengan E Manajemen Komunikasi dan Edukasi (MKE), sesuai usulan PDF. Jangan menanyakan ulang atau menghidupkan kode skip melalui varian.
+- Katalog209soal =207rilis sebelumnya yang tetap identik +G181 ambiguous dengan keputusan per-ID +G185 verified dengan koreksi nama bab disetujui.148verified/61ambiguous. Tidak ada keputusan wajib tersisa dari PDF10kasus;27fragmen/masalah lain tetap ditahan tanpa rekonstruksi paksa.
+- Receipt privat: content/private/all-sources/g-followup-user-decisions.json, terikat PDF SHA256380a4fbfded168e1130cda5463ca52eee00232428c9cba313f92866c2014a8eb dan signature setiap kode. apply_g_review.py menerapkan overlay ini setelah ledger lama; pemanggilan ulang tidak boleh membatalkan keputusan.
+- Wakil KE lama Q081 menjadi alias G185, bukan pertanyaan kedua; G103/kemunculan sumber lain ikut menunjuk wakil MKE yang sama. Snapshot207 tetap privat sebagai bukti bahwa soal lain tidak berubah.

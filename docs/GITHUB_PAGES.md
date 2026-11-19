@@ -24,6 +24,10 @@ Progres latihan terikat origin dan browser. Progres pada alamat lama tidak otoma
 
 ## Kurasi dan pembaruan
 
+Rilis terkini209soal:148verified/61ambiguous dengan keputusan per-ID. Seluruh10kasus PDF lanjutan sudah diputuskan: sembilan kode skip, G181 mengikuti C, G185 satu soal E MKE.207soal rilis sebelumnya tidak berubah. Varian KE lama tetap alias, bukan soal kedua.27fragmen/masalah lain tetap ditahan; tidak ada keputusan wajib tersisa dari PDF tersebut. Overlay privat `g-followup-user-decisions.json` diterapkan sesudah ledger lama oleh `scripts/apply_g_review.py`. Hash katalog: `5eef6959c78ac0d9fb73da4da5a4a64c6c610e93198f8f2e0f7b22f2f4b73fad`.
+
+Riwayat rilis207:
+
 Pembaruan tinjauan G:207soal unik (147verified/60ambiguous dengan keputusan per-ID). Dari189soal sebelumnya,41duplikat disatukan dan1konflik nama bab SNARS1 ditahan. Keputusan pengguna menambahkan40wakil unik dan pemeriksaan catatan memulihkan20soal dengan44pengecoh buatan yang dicatat privat.49skip G tetap berlaku. G041/G042 masih menunggu pilihan satu wakil; G185 menunggu persetujuan MKE.
 
 Gunakan `scripts/complete_g_reassessment.py` lalu `scripts/apply_g_review.py` untuk mereproduksi proposal privat dari baseline189, keputusan terikat signature, dan manifest deduplikasi yang ditinjau. Skrip ini tidak mengintegrasikan atau menerbitkan otomatis. `scripts/assemble_gsm.py` di bawah menjelaskan pipeline rilis sebelumnya dan tidak boleh menimpa katalog terbaru. Kode G tetap beku; PDF keputusan lanjutan terpisah dari dokumen212entri terdahulu. Hash katalog terkini: `1f4a40228d3accd47ef41ac5444e7f6e83bf79ab7e398fc9dd4fef4a5cbdbb11`.

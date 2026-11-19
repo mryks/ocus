@@ -24,6 +24,10 @@ Progres latihan terikat origin dan browser. Progres pada alamat lama tidak otoma
 
 ## Kurasi dan pembaruan
 
+Pembaruan tinjauan G:207soal unik (147verified/60ambiguous dengan keputusan per-ID). Dari189soal sebelumnya,41duplikat disatukan dan1konflik nama bab SNARS1 ditahan. Keputusan pengguna menambahkan40wakil unik dan pemeriksaan catatan memulihkan20soal dengan44pengecoh buatan yang dicatat privat.49skip G tetap berlaku. G041/G042 masih menunggu pilihan satu wakil; G185 menunggu persetujuan MKE.
+
+Gunakan `scripts/complete_g_reassessment.py` lalu `scripts/apply_g_review.py` untuk mereproduksi proposal privat dari baseline189, keputusan terikat signature, dan manifest deduplikasi yang ditinjau. Skrip ini tidak mengintegrasikan atau menerbitkan otomatis. `scripts/assemble_gsm.py` di bawah menjelaskan pipeline rilis sebelumnya dan tidak boleh menimpa katalog terbaru. Kode G tetap beku; PDF keputusan lanjutan terpisah dari dokumen212entri terdahulu. Hash katalog terkini: `1f4a40228d3accd47ef41ac5444e7f6e83bf79ab7e398fc9dd4fef4a5cbdbb11`.
+
 Semua delapan PDF ditinjau secara lokal. Review ledger dan laporan lengkap tetap privat. `scripts/assemble_gsm.py` membuat proposal dari baseline47 dan ledger yang telah diperiksa; tidak menerbitkan otomatis. Hanya entri lengkap dengan dukungan verifikasi masuk tambahan bank. Konflik, opsi hilang, dan keputusan skip ditahan.
 
 Setelah tinjauan, validator menghitung hash canonical, menyimpan receipt keputusan yang benar dan menguji katalog sebelum integrasi. Keputusan mengikuti kunci lama tetap terikat per-ID. Mengubah kunci yang diperselisihkan memerlukan keputusan eksplisit; izin deploy bukan pembenaran mengubah status ilmiah.

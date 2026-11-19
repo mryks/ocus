@@ -63,3 +63,19 @@ Detail pipeline, format draft/approval, dan keterbatasan ekstraksi: `docs/CONTEN
 - scripts/assemble_gsm.py menyusun proposal dari ledger ditinjau, hanya status ready+verified. Source-confirmed belum memenuhi verified. Konflik, fragmen, dan12skip lama tetap ditahan. Baseline47 tetap disimpan lokal untuk provenance dan ID stabil; penjelasan boleh diringkas tanpa mengubah kunci.
 - Katalog publik kini diperluas; gunakan jumlah aktual katalog dan laporan perakitan, jangan mengasumsikan47. Draf preview47/stage4 adalah arsip tinjauan historis. Integrasi menolak receipt yang lebih tua menimpa rilis baru.
 - Build GitHub Pages: npm run build:pages, basis/ocus/, HashRouter. Backend Sites/D1 tetap sama, REPORTING_ALLOWED_ORIGIN=https://mryks.github.io. Nama dan konteks laporan berada dalam snapshot JSON kompatibel dengan laporan lama; jangan reset D1.
+
+## Keputusan G pengguna dan pemulihan catatan
+
+- Pengguna meninjau G-001–G-101 pada PDF bernomor berurutan (hash6738543d2439f8a446c54825ce38f626a654025ed6eccf25dcdaae9109b6bb86):52keep-source-key,49skip. Record terikat signature: content/private/all-sources/g-user-decisions.json. Kode G tetap mengacu registryreview-numbering.json; jangan dinomori ulang setelah keputusan.
+- Izin terbaru memperluas pengecoh buatan: catatan jawaban tanpa opsi dapat dipulihkan jika jawaban cukup jelas dan diverifikasi. Jangan memaksakan konteks/soal baru. Catat mana opsi sumber dan mana generated-distractor secara privat.
+- Isian bertanda ... adalah bentuk MCQ yang sah; bukan otomatis soal terpotong. G119 harus dicek terhadap catatan(critical)/opsiA di sumber, dan dideduplikasi jika sama soal sterilisasi kritis yang sudah ada.
+- Periksa duplikat seluruh bank, termasuk parafrasa dari skenario dan yang ditanyakan sama. Jangan menggabungkan hanya karena topik/jawabannya sama; pertanyaan berbeda pada skenario sama tetap berbeda. Source provenance dan kunci tetap tercatat; konflik kunci tidak dihapus dengan deduplikasi.
+- Skip G/R berlaku pada entri yang diputuskan. Varian utuh yang telah disetujui sebelumnya tidak otomatis dicabut karena versi fragmennya skip; varian skip tidak dipakai sebagai rekonstruksi baru.
+
+## Penerapan keputusan G dan deduplikasi
+
+- Katalog terbaru207 soal:147 verified,60 ambiguous dengan keputusan per-ID. Dari189 lama,41 wakil berulang disatukan dan1 konflik edisi akreditasi ditahan;40 tambahan unik dari keputusan G dan20 pemulihan terverifikasi ditambahkan.52 keep pengguna mencakup10 padanan bank dan2 entri rujukan yang ditahan untuk konsolidasi G041/G042;49 skip tetap berlaku.
+- Jalur reproduksi baru: scripts/complete_g_reassessment.py lalu scripts/apply_g_review.py menghasilkan proposal privat, bukan integrasi/publikasi otomatis. Baseline189 dan registry G beku; jangan menjalankan assemble_gsm.py untuk menimpa katalog baru. Validator TypeScript menghitung hash dan mengikat receipt nyata sebelum integrasi.
+- G038 mengikuti D dari padanan G120 (IKGMP halaman6 no18, tulisan biru), bukan verified. G038 halaman19 tidak memiliki penanda tunggal; provenance ini wajib tetap terbaca privat. G002 menjadi wakil lengkap kaca mulut, menggantikan varian pendek Q014/R12 tanpa mengganti konsep kunci.
+- G185 dan wakil lama GITAR48 ditahan karena SNARS1 memakai MKE, bukan KE. Perubahan nama jawaban memerlukan keputusan pengguna. G041/G042 ditahan karena skenario dan sasaran serupa tetapi dimensi/kunci berbeda; jangan menerbitkan dua soal berulang atau memilih salah satu tanpa keputusan konsolidasi.
+- Tinjauan lanjutan10 kasus ada pada output/pdf/GSM-keputusan-lanjutan.pdf, kode tetap G. Sisa fragmen tidak dipaksakan; G122/G186/G200 belum dipulihkan hanya dengan membuat pengecoh. Ledger hasil lengkap dan44 pengecoh buatan tersimpan privat pada g-application-ledger.json.

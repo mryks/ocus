@@ -24,7 +24,9 @@ Progres latihan terikat origin dan browser. Progres pada alamat lama tidak otoma
 
 ## Kurasi dan pembaruan
 
-Rilis terkini209soal:148verified/61ambiguous dengan keputusan per-ID. Seluruh10kasus PDF lanjutan sudah diputuskan: sembilan kode skip, G181 mengikuti C, G185 satu soal E MKE.207soal rilis sebelumnya tidak berubah. Varian KE lama tetap alias, bukan soal kedua.27fragmen/masalah lain tetap ditahan; tidak ada keputusan wajib tersisa dari PDF tersebut. Overlay privat `g-followup-user-decisions.json` diterapkan sesudah ledger lama oleh `scripts/apply_g_review.py`. Hash katalog: `5eef6959c78ac0d9fb73da4da5a4a64c6c610e93198f8f2e0f7b22f2f4b73fad`.
+Perapian bahasa20November2026 meninjau209soal dan merapikan208stem/opsi tanpa mengubah kunci, ID, gambar atau status ilmiah. Singkatan percakapan seperti yg/drg/tsb diperjelas; istilah resmi dipertahankan. Ledger before/after dan klarifikasi pengguna tetap privat. `scripts/polish_question_language.py` adalah tahap editorial sesudah kurasi G, bukan jalur integrasi otomatis. L02–L06 tetap sesuai pilihan pengguna; istilah ok pada soal posisi operator gigi26 belum ditafsirkan. Hash redaksi terbaru: `fd0f2ab51fad05fb7bc6893cb98edb5dfeb8c15d73da1314836071b681d3337d`.
+
+Riwayat rilis209sebelum perapian bahasa:148verified/61ambiguous dengan keputusan per-ID. Seluruh10kasus PDF lanjutan sudah diputuskan: sembilan kode skip, G181 mengikuti C, G185 satu soal E MKE.207soal rilis sebelumnya tidak berubah pada tahap tersebut. Varian KE lama tetap alias, bukan soal kedua.27fragmen/masalah lain tetap ditahan; tidak ada keputusan wajib tersisa dari PDF tersebut. Overlay privat `g-followup-user-decisions.json` diterapkan sesudah ledger lama oleh `scripts/apply_g_review.py`. Hash sebelum perapian: `5eef6959c78ac0d9fb73da4da5a4a64c6c610e93198f8f2e0f7b22f2f4b73fad`.
 
 Riwayat rilis207:
 
